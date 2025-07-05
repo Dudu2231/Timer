@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+    
+    <div class="main-container">
+
+        <div class="display-container">
+            <p id="display-time">00:00</p>
+        </div>
+        
+        <div class="options-container"> 
+
+            <form action="#" id="form-setter">
+                <label for="time" id="info">Insira o tempo em min:</label>
+                <input type="number" id="time" placeholder="ex: 40" min="1" max="60">
+                <button id="start-btn">Iniciar</button>
+            </form>
+
+            <div class="button-group">
+                <button id="stop-btn">Parar</button>
+                <button id="continue-btn">Continuar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="dist/index.js"></script>
+</body>
+</html>

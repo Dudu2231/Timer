@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+html, body{
+    background-color: #000000;
+    height: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-container{
+    padding: 1rem;
+}
+
+#info{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#display-time{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.options-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#form-setter{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#time{
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    border: none;
+}
+
+#time:focus{
+    padding: 1rem;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+#start-btn, #stop-btn, #continue-btn{
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#stop-btn{
+    background-color: rgb(230, 83, 107);
+    flex-grow: 1;
+}
+
+#stop-btn:hover{
+    background-color: rgb(163, 59, 76);
+    
+
+}
+
+#continue-btn{
+    background-color: rgb(117, 213, 117);
+
+}
+
+#continue-btn:hover{
+    background-color: rgb(70, 157, 70);
+
+}
