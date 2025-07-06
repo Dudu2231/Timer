@@ -30,7 +30,7 @@ html, body{
 #display-time{
     display: flex;
     flex-wrap: wrap;
-    font-size: 4rem;
+    font-size: 6rem;
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
