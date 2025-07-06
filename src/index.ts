@@ -18,16 +18,25 @@ function startTimer():void{
     
     
 }
+
+function renderTimer():void{
+
+    if (timeInSeconds>=0){
+        let min = (String(Math.floor(timeInSeconds/60))).padStart(2, "0")
+        let secs = (String(timeInSeconds%60)).padStart(2, "0")   
+    
+        showTime.innerText =  `${min}:${secs}`
+    }
+}
+
 function updateTimer():void{
+
+    renderTimer()
     timerId = setInterval(() => {
         
         if (itsON && timeInSeconds>=0){
-            let min = (String(Math.floor(timeInSeconds/60))).padStart(2, "0")
-            let secs = (String(timeInSeconds%60)).padStart(2, "0")   
-            console.log('tá chegando aqui');
-    
-            showTime.innerText =  `${min}:${secs}`
             timeInSeconds--;
+            renderTimer();
             console.log(timeInSeconds);
         }
         else{
