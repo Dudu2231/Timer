@@ -4,9 +4,13 @@ const startBtn = document.getElementById("start-btn");
 const stopBtn = document.getElementById("stop-btn");
 const continueBtn = document.getElementById("continue-btn");
 const showTime = document.getElementById('display-time');
+const formSetter = document.getElementById("form-setter");
 let itsON = true;
 let timerId;
 let timeInSeconds;
+formSetter.addEventListener('submit', (e) => {
+    e.preventDefault();
+});
 startBtn.addEventListener('click', startTimer);
 stopBtn.addEventListener('click', stopTimer);
 continueBtn.addEventListener('click', continueTimer);

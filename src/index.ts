@@ -3,9 +3,16 @@ const startBtn = document.getElementById("start-btn") as HTMLButtonElement
 const stopBtn =  document.getElementById("stop-btn") as HTMLButtonElement
 const continueBtn = document.getElementById("continue-btn") as HTMLButtonElement
 const showTime = document.getElementById('display-time') as HTMLButtonElement
+const formSetter = document.getElementById("form-setter") as HTMLFieldSetElement
+
 let itsON: boolean = true;
 let timerId: number;
 let timeInSeconds: number;
+
+formSetter.addEventListener('submit', (e)=>{
+    e.preventDefault()
+})
+
 startBtn.addEventListener('click', startTimer)
 stopBtn.addEventListener('click', stopTimer)
 continueBtn.addEventListener('click', continueTimer)
